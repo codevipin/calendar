@@ -3,12 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 import MenuAppBar from './components/MenuAppBar';
+import CalendarWeek from './components/CalendarWeek';
+import EventBox from './components/EventBox';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MenuAppBar/>
+        <CalendarWeek/>
+        <EventBox/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
