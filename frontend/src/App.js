@@ -5,13 +5,17 @@ import './App.css';
 import MenuAppBar from './components/MenuAppBar';
 import CalendarWeek from './components/CalendarWeek';
 import EventBox from './components/EventBox';
+import AddEvent from './components/AddEvent';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MenuAppBar/>
-        <CalendarWeek/>
+        <div className="header-container">
+          <AddEvent />
+          <CalendarWeek />
+        </div>
         <EventBox/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

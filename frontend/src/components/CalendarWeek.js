@@ -33,7 +33,7 @@ function CenteredGrid(props) {
       <Grid container>
         <Grid container xs={2}>
 	        <Grid item xs={12}>
-	          <Paper className={classes.paper} square={true}>
+	          <Paper className={classes.paper} square={true} elevation={0}>
 	          	Monday
 				<Typography component="p">
 					5
