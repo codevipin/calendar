@@ -21,7 +21,7 @@ const styles = {
   iconButton: {
     padding: 5,
     borderRadius: 0,
-    background: 'green',
+    background: '#00B5A4',
     color: '#fff',
   },
   divider: {
@@ -31,11 +31,15 @@ const styles = {
   },
 };
 
+function handleClick(event) {
+  console.log("btn clicked");
+}
+
 function CustomizedInputBase(props) {
   const { classes } = props;
 
   return (
-    <Paper className={classes.root} elevation={0}>
+    <Paper className={classes.root} elevation={0} onClick={handleClick}>
       
       <InputBase className={classes.input} placeholder="Type to add event" />
       <IconButton className={classes.iconButton} aria-label="Plus">

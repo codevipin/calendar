@@ -8,12 +8,16 @@ import Typography from '@material-ui/core/Typography';
 const styles = theme => ({
   root: {
     flexGrow: 1,
+    color: '#00B5A4',
   },
   paper: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
     color: theme.palette.text.secondary,
     height:'100%'
+  },
+  typography: {
+    fontSize: 12,
   },
 });
 
@@ -41,7 +45,7 @@ function CenteredGrid(props) {
             <Grid container xs={2}>
               <Grid item xs={12}>
                 <Paper className={classes.paper} square={true}>
-                  <Typography component="p" align="left">
+                  <Typography className={classes.typography} component="p" align="left">
                     { index+4 } {index+4>11 ? 'PM': 'AM'}
                   </Typography>
                 </Paper>
